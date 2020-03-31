@@ -1,52 +1,100 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <html>
   <head>
-    <link rel="canonical" href="properlinux.org"/>
+    <link rel="canonical" href="properlinux.io"/>
     <link href="https://fonts.googleapis.com/css?family=Lusitana" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"/>
     <style>
+      * {
+	  box-sizing: border-box;
+      }
+
       html {
-      font-size: 110%;
+	  font-size: 110%;
       }
 
       @media(min-width:60em){html{font-size: 90%}}
-      
+
       body {
-      font-size: 16px;
-      font-family: 'Source Sans Pro', sans-serif;
+	  font-size: 16px;
+	  font-family: 'Source Sans Pro', sans-serif;
       }
 
       p {
-      font-size: 120%;
-      line-height: 1.2;
+	  font-size: 120%;
+	  line-height: 1.2;
       }
 
       .large-text {
-      font-size: 6.5vw;
-      font-family: 'Lusitana', serif;
-      margin: 20px;
+	  font-size: 6.5vw;
+	  font-family: 'Lusitana', serif;
+	  margin: 20px;
       }
-      
+
       .container {
-      display: block;
-      border: 0px;
-      height: 60%;
-      background: #fff;
-      margin-top: 20px;
-      margin: auto;
+	  display: block;
+	  border: 0px;
+	  height: 60%;
+	  background: #fff;
+	  margin-top: 20px;
+	  margin: auto;
       }
-      
+
+      .sm-container {
+	  display: block;
+	  border: 0px;
+	  height: 10%;
+	  background: #fff;
+	  margin-top: 2px;
+	  margin: auto;
+      }
+
       .big-text {
-      margin: 15px;
-      font-size: 3.0vw;
-      }      
+	  margin: 15px;
+	  font-size: 3.0vw;
+      }
+
+      .small-text {
+	  margin: 2px;
+	  font-size: 1.0vw;
+      }
+
+      .column {
+	  float: left;
+	  width: 50%;
+	  padding: 10px;
+      }
+
+      .row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+      }
+
+      @media screen and (max-width: 600px) {
+	  .column {
+	      width: 100%;
+	  }
+      }
     </style>
   </head>
   <body>
     <center>
-      <img class="container" src="tux_circle_bw.svg"/>
       <div class="large-text">ProperLinux</div>
-      <div class="big-text">Coming Soon...</div>
+      <img class="container" src="tux_circle_bw.svg"/>
+      <hr/>
+      <div class="row">
+	<div class="column">
+	  <a href="https://github.com/ProperLinux">
+	    <img class="sm-container" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"/>
+	  </a>
+	</div>
+	<div class="column">
+	  <a href="https://twitter.com/ProperLinux">
+	    <img class="sm-container"src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/twitter.svg"/>
+	  </a>
+	</div>
+      </div>
     </center>
   </body>
 </html>
